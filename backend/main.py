@@ -9,7 +9,7 @@ from typing import Dict, Any, List
 import io
 import numpy as np
 
-from backend.inference import make_prediction, predict_single_transaction
+from .inference import make_prediction, predict_single_transaction
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -122,4 +122,4 @@ async def predict_single(request: SingleTransactionRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
