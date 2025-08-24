@@ -87,15 +87,17 @@ print("Training complete.")
 print("\n--- Model Evaluation on Original Test Data ---")
 y_pred = model_pipeline.predict(X_test)
 y_pred_proba = model_pipeline.predict_proba(X_test)
-# Classification Report
+
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+
 cm = confusion_matrix(y_test, y_pred)
 print("\nConfusion Matrix:\n", cm)
 print("True Positives:", cm[1, 1])
 print("False Positives:", cm[0, 1])
 print("True Negatives:", cm[0, 0])
 print("False Negatives:", cm[1, 0])
+
 # --- Visualize Confusion Matrix ---
 plt.figure(figsize=(6,5))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=[0,1], yticklabels=[0,1])
@@ -103,7 +105,7 @@ plt.title("Confusion Matrix (Test Set)")
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.show()
-#log loss
+
 ll = log_loss(y_test, y_pred_proba)
 print(f"\nLog Loss: {ll:.4f}")
 

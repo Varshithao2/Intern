@@ -1,7 +1,9 @@
-# Backend dependencies
 fastapi
 uvicorn
-boto3
-joblib
-numpy
+pandas==2.1.1
+
 scikit-learn
+imbalanced-learn
+joblib
+boto3
+numpy
