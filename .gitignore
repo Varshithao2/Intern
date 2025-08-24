@@ -137,7 +137,6 @@ aws-credentials.json
 frontend/.streamlit/secrets.toml
 
 # Model files (if you want to keep them out of version control)
-*.joblib
 *.pkl
 *.h5
 
