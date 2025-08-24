@@ -1,0 +1,11 @@
+# Streamlit secrets/config
+# frontend/.streamlit/config.toml
+# (Optional UI config)
+[server]
+headless = true
+port = 8501
+enableCORS = false
+
+# You can also add a secrets.toml instead for sensitive values.
+# For local development you can create .streamlit/secrets.toml with the values below.
+

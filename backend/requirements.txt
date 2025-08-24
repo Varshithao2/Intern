@@ -1,0 +1,7 @@
+# Backend dependencies
+fastapi
+uvicorn
+boto3
+joblib
+numpy
+scikit-learn

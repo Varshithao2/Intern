@@ -1,0 +1,19 @@
+# Core ML & Data
+pandas
+numpy
+scikit-learn
+joblib
+
+# API Backend
+fastapi
+uvicorn
+
+# AWS SDK
+boto3
+
+# Frontend
+streamlit
+requests
+
+# Extra utilities
+python-dotenv
